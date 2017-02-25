@@ -1,6 +1,7 @@
 package entité;
 import java.util.Random;
 import terrain.Direction;
+import terrain.Représentation;
 import terrain.Terrain;
 
 /**
@@ -14,15 +15,15 @@ public class BigVoleur extends Voleur{
 	
 	private boolean estDéguisé; //état du déguisement (actif ou non)
 	private int tpsDéguiRestant; //nombre de pas d'animation restant du déguisement
-	private static final char DEGUISEMENT = 'E';
-	private static final int DUREE_DEGUISEMENT = 30;
+	private static final char DEGUISEMENT = Représentation.getBigVoleurDeguisement();
+	private final int DUREE_DEGUISEMENT = 30; // = X tours
 	
 	/*
 	 * A chaque tour, le voleur a une chance de se déguiser.
 	 * Pour se déguiser, il doit cependant être libre. La chance pour le
 	 * BigVoleur de se déguiser est égale à une chance sur "PROBA_DEGUISEMENT"
 	 */
-	private static final int PROBA_DEGUISEMENT = 25;
+	private final int PROBA_DEGUISEMENT = 25; // = 4%
 	
 	public BigVoleur(int x, int y, char c, Direction d){
 		super(x, y, c, d);

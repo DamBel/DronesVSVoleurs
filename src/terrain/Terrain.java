@@ -49,19 +49,19 @@ public class Terrain {
 				char c = currentLine.charAt(j);				
 	
 				//TODO : si possible transformer cet énorme if en switch
-				if (c == 'v'){
+				if (c == Représentation.getVoleur()){
 					voleurs.add(fabrique.getVoleur(j,i,c,d.randomDirection()));
 					plan[j][i] = c;
 				}				
-				else if (c == 'V'){
+				else if (c == Représentation.getBigVoleur()){
 					voleurs.add(fabrique.getBigVoleur(j,i,c,d.randomDirection()));
 					plan[j][i] = c;
 				}				
-				else if (c == 'd'){
+				else if (c == Représentation.getDrone()){
 					drones.add(fabrique.getDrone(j,i,c,d.randomDirection()));
 					plan[j][i] = c;
 				}
-				else if(c == 'D'){
+				else if(c == Représentation.getBigDrone()){
 					drones.add(fabrique.getBigDrone(j,i,c,d.randomDirection(), this));
 					plan[j][i] = c;
 				}

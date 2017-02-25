@@ -1,5 +1,6 @@
 package entité;
 import terrain.Direction;
+import terrain.Représentation;
 import terrain.Terrain;
 
 /**
@@ -27,5 +28,9 @@ public class FabriqueEntité {
 	
 	public Argent getArgent(int x, int y, char valeur){
 		return new Argent(x, y, valeur);
+	}
+	
+	public Policier getPolicier(int x, int y, char c, Direction d){
+		return new Policier(x, y, c, d, Représentation.getPortéePolicier());
 	}
 }
