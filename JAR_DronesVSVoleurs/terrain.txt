@@ -1,0 +1,16 @@
+24 15 500
+XXXXXXXXXXXXXXXXXXXXXXXX
+X 8 9 7 X   v    X4 5 6X
+X  6 8  X        X     X
+X       X        X     X
+XXXX  XXX        X     X
+X D              X     X
+X   d               D  X
+X       XXXXXXXX       X
+X       X      X       X
+X       XXXXXXXX       X
+X                      X
+X V                    X
+XXXXXXXXXXXXX      3 4 X
+X 9 9 9       d     2 1X
+XXXXXXXXXXXXXXXXXXXXXXXX
